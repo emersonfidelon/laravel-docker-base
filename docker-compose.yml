@@ -1,8 +1,7 @@
 version: '3'
 
 networks:
-  ${NETWORK_NAME}:
-    driver: bridge
+  new_project_laravel:
 
 services:
   nginx: 
