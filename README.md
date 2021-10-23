@@ -42,6 +42,10 @@ cd laravel-docker-base
 ```sh
 chmod -R 777 src/
 ```
+4. Gere as imagens do docker
+```sh
+sudo docker-compose --env-file .env.dev up -d --build
+```
 4. instale as dependências do projeto
 ```sh
 docker-compose run composer install
@@ -50,6 +54,12 @@ docker-compose run composer install
 ```sh
 docker ps
 ```
-6. Abra o navegador e digite http://localhost:7000
+6. Abra o navegador e digite http://localhost:8000
 
 <img src="https://therichpost.com/wp-content/uploads/2020/09/Laravel-8-FullCalendar-Working-Example.png" width="100%" />
+
+## Vale lembrar
+
+Para alterar as configurações do docker-compose basta alterar o arquivo .env.dev
+
+Caso a alteração seja da network, a mesma deve ser alterada no arquivo .env.dev e no docker-compose.yml
