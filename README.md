@@ -50,6 +50,6 @@ docker-compose run composer install
 ```sh
 docker ps
 ```
-7. Abra o navegador e digite http://localhost:7000
+6. Abra o navegador e digite http://localhost:7000
 
 <img src="https://therichpost.com/wp-content/uploads/2020/09/Laravel-8-FullCalendar-Working-Example.png" width="100%" />
