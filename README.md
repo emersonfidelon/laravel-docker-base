@@ -44,17 +44,17 @@ chmod -R 777 src/
 ```
 4. Gere as imagens do docker
 ```sh
-sudo docker-compose --env-file .env.dev up -d --build
+docker-compose --env-file .env.dev up -d --build
 ```
-4. instale as dependências do projeto
+5. instale as dependências do projeto
 ```sh
-docker-compose run composer install
+docker-compose --env-file .env.dev run composer install
 ```
-5. Verificando se todos os containers subiram corretamente
+6. Verificando se todos os containers subiram corretamente
 ```sh
 docker ps
 ```
-6. Abra o navegador e digite http://localhost:8000
+7. Abra o navegador e digite http://localhost:8000
 
 <img src="https://therichpost.com/wp-content/uploads/2020/09/Laravel-8-FullCalendar-Working-Example.png" width="100%" />
 
